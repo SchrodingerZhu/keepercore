@@ -1,0 +1,9 @@
+[target.aarch64-linux-android]
+ar = "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar"
+linker = "/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android29-clang"
+
+
+[target.aarch64-linux-android.botan-2]
+rustc-link-lib = ["static=botan-2"]
+rustc-link-search = ["/home/schrodinger/code/botan"]
+
